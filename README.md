@@ -1,19 +1,19 @@
 # SolRouter Private Crypto Research Agent
 
-A private AI agent that researches crypto markets using end-to-end encrypted inference via SolRouter. Your queries never leave your device unencrypted — not even SolRouter's backend can read your prompts.
+A private AI agent that researches crypto markets using end to end encrypted inference via SolRouter. Your queries never leave your device unencrypted not even SolRouter's backend can read your prompts.
 
 ## What It Does
 
-This agent lets you ask sensitive crypto research questions — DeFi risks, token analysis, market sentiment — without exposing your strategy to any server. Every prompt is encrypted client-side before transmission and decrypted only inside a hardware-isolated Trusted Execution Environment (TEE).
+This agent lets you ask sensitive crypto research questions DeFi risks, token analysis, market sentiment without exposing your strategy to any server. Every prompt is encrypted client side before transmission and decrypted only inside a hardware isolated Trusted Execution Environment (TEE).
 
 ## Why Private Inference Matters
 
-When you research a trading strategy or analyze a DeFi protocol using a normal AI, your prompt is visible to the AI company's servers. For crypto traders and investors, this is a real risk — your research strategy could be logged, leaked, or front-run.
+When you research a trading strategy or analyze a DeFi protocol using a normal AI, your prompt is visible to the AI company's servers. For crypto traders and investors, this is a real risk your research strategy could be logged, leaked, or front run.
 
 SolRouter solves this with:
 - Client-side encryption using Arcium's RescueCipher (X25519 key exchange)
-- Blind backend — the server only sees encrypted data
-- TEE processing — decryption only happens inside isolated hardware
+- Blind backend: the server only sees encrypted data
+- TEE processing: decryption only happens inside isolated hardware
 - On-chain privacy attestations on Solana for verification
 
 ## Features
