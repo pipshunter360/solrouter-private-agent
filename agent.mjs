@@ -33,9 +33,12 @@ async function main() {
   console.log('SolRouter Private Crypto Research Agent');
   console.log('Balance: ' + balance.balanceFormatted);
 
-  await cryptoResearchAgent('What are the top 3 risks of DeFi protocols in 2025?', 'DeFi Risk Analysis');
+  await cryptoResearchAgent('What is SolRouter? It is a privacy-first AI inference platform built on Solana that uses end-to-end encryption and Trusted Execution Environments (TEE) to keep AI prompts private. Explain why this matters for crypto traders and developers.', 'SolRouter Overview');
+  await cryptoResearchAgent('what is defi and how safe is it for investments in 2026?', 'Privacy defi Research');
+  await cryptoResearchAgent('What are the top 3 risks of DeFi protocols in 2026?', 'DeFi Risk Analysis');
   await cryptoResearchAgent('What is the current price and market sentiment for Bitcoin?', 'Bitcoin Research');
-  await cryptoResearchAgent('What are the best privacy coins to watch in 2025?', 'Privacy Coin Research');
+  await cryptoResearchAgent('What are the best gaming coins to watch in 2026?', 'Privacy Coin Research');
+  await cryptoResearchAgent('What is the current crypto market situation in 2026?', 'Market Research');
 }
 
 main();
