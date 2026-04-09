@@ -34,16 +34,16 @@ When you use a normal AI to research crypto, your prompt travels to the company'
 
 SolRouter solves this with:
 
-- **Blind backend** — the server only ever sees encrypted data
-- **TEE processing** — decryption only happens inside isolated hardware
-- **On-chain attestations** — privacy guarantees are verifiable on Solana
-- **Live web search** — real-time market data, processed privately
+- **Blind backend** → the server only ever sees encrypted data
+- **TEE processing** → decryption only happens inside isolated hardware
+- **On-chain attestations** → privacy guarantees are verifiable on Solana
+- **Live web search** → real time market data, processed privately
 
 ---
 
 ## Live Demo
 
-### Agent Running — Encrypted Queries in Action
+### Agent Running Encrypted Queries in Action
 [![Agent Running Demo](https://img.shields.io/badge/▶%20Watch%20Demo-Agent%20Running-red?style=for-the-badge&logo=loom)](https://www.loom.com/share/7ea0e276818340089456ca661df64255)
 
 > Full demo showing 6 encrypted crypto research queries running live with real-time market data
