@@ -6,17 +6,17 @@
 ![Network](https://img.shields.io/badge/network-Solana%20Devnet-9945FF.svg)
 ![Encryption](https://img.shields.io/badge/encryption-end--to--end-red.svg)
 
-A private AI agent that researches crypto markets using end-to-end encrypted inference via SolRouter. Every query is encrypted on your device before it leaves — not even SolRouter's backend can read your prompts.
+A private AI agent that researches crypto markets using end-to-end encrypted inference via SolRouter. Every query is encrypted on your device before it leaves not even SolRouter's backend can read your prompts.
 
 ---
 
 ## What It Does
 
-This agent lets you research sensitive crypto topics — DeFi risks, Bitcoin sentiment, gaming coins, market conditions — without exposing your strategy to any server. Every prompt is:
+This agent lets you research sensitive crypto topics like DeFi risks, Bitcoin sentiment, gaming coins, market conditions without exposing your strategy to any server. Every prompt is:
 
-- Encrypted client-side using Arcium's RescueCipher (X25519 key exchange)
+- Encrypted client side using Arcium's RescueCipher (X25519 key exchange)
 - Processed inside a hardware-isolated Trusted Execution Environment (TEE)
-- Returned encrypted — nobody in the middle reads your query
+- Returned encrypted nobody in the middle reads your query
 
 **Queries the agent runs:**
 - What is SolRouter and why does private inference matter?
@@ -30,7 +30,7 @@ This agent lets you research sensitive crypto topics — DeFi risks, Bitcoin sen
 
 ## Why Private Inference Matters
 
-When you use a normal AI to research crypto, your prompt travels to the company's server in plain text. For traders and investors, this is a real risk — your research strategy can be logged, leaked, or front-run.
+When you use a normal AI to research crypto, your prompt travels to the company's server in plain text. For traders and investors, this is a real risk your research strategy can be logged, leaked, or front-run.
 
 SolRouter solves this with:
 
