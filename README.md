@@ -259,13 +259,14 @@ AI agent developers. Agents that manage DeFi positions or execute trades based o
 
 ## Project Structure
 
+```
 solrouter-private-agent/
 ├── agent.mjs           # Main agent. Runs encrypted crypto research queries and portfolio risk analysis.
 ├── package.json        # Project dependencies and scripts.
 ├── package-lock.json   # Locks dependency versions for consistent installs.
 ├── .gitignore          # Keeps .env and node_modules out of the repo.
 └── README.md           # Full documentation and setup tutorial.
-
+```
 ---
 
 ## Available Models
