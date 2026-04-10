@@ -294,12 +294,10 @@ solrouter-private-agent/
 
 ## Built With
 
-| Platform | Link |
-|---|---|
-| SolRouter | [solrouter.com](https://solrouter.com) |
-| Arcium | [arcium.com](https://arcium.com) |
-| Solana | [solana.com](https://solana.com) |
-| Circle | [circle.com](https://circle.com) |
+[![SolRouter](https://img.shields.io/badge/SolRouter-Privacy%20AI-black?style=for-the-badge)](https://solrouter.com)
+[![Arcium](https://img.shields.io/badge/Arcium-MPC%20Encryption-blue?style=for-the-badge)](https://arcium.com)
+[![Solana](https://img.shields.io/badge/Solana-Blockchain-9945FF?style=for-the-badge)](https://solana.com)
+[![Circle](https://img.shields.io/badge/Circle-USDC-00D395?style=for-the-badge)](https://circle.com)
 
 ---
 
