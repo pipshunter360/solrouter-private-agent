@@ -260,38 +260,35 @@ AI agent developers. Agents that manage DeFi positions or execute trades based o
 ## Project Structure
 
 solrouter-private-agent/
-├── agent.mjs          # Main agent → crypto research and portfolio analyzer
-├── package.json       # Project dependencies
-├── .gitignore         # Protects .env and node_modules from being committed
-└── README.md          # This file
+├── agent.mjs           # Main agent. Runs encrypted crypto research queries and portfolio risk analysis.
+├── package.json        # Project dependencies and scripts.
+├── package-lock.json   # Locks dependency versions for consistent installs.
+├── .gitignore          # Keeps .env and node_modules out of the repo.
+└── README.md           # Full documentation and setup tutorial.
 
 ---
 
 ## Available Models
 
-gpt-oss-20b → Open-source GPT 20B. Default model, cheapest option, good for general research queries.
-
-gemini-flash → Google Gemini Flash. Fast responses, good for high-volume queries.
-
-claude-sonnet → Anthropic Claude Sonnet. Strong reasoning, better for complex analysis.
-
-gpt-4o-mini → OpenAI GPT-4o Mini. Balanced performance and cost.
+| Model | Provider | Best For |
+|---|---|---|
+| gpt-oss-20b | Open-source GPT 20B | Default model, cheapest, good for general research |
+| gemini-flash | Google Gemini Flash | Fast responses, high volume queries |
+| claude-sonnet | Anthropic Claude Sonnet | Strong reasoning, complex analysis |
+| gpt-4o-mini | OpenAI GPT-4o Mini | Balanced performance and cost |
 
 ---
 
 ## Tech Stack
 
-SolRouter SDK (@solrouter/sdk) → handles all encryption and API communication automatically.
-
-Node.js v24.14.1 → JavaScript runtime for running the agent outside a browser.
-
-Solana Devnet → blockchain infrastructure for routing and payments.
-
-Circle USDC → stablecoin used for paying inference costs on devnet.
-
-Arcium RescueCipher with X25519 → the encryption protocol that keeps prompts private.
-
-dotenv → loads API keys from .env files securely without hardcoding them.
+| Technology | Purpose |
+|---|---|
+| SolRouter SDK (@solrouter/sdk) | Handles all encryption and API communication automatically |
+| Node.js v24.14.1 | JavaScript runtime for running the agent outside a browser |
+| Solana Devnet | Blockchain infrastructure for routing and payments |
+| Circle USDC | Stablecoin used for paying inference costs on devnet |
+| Arcium RescueCipher X25519 | Encryption protocol that keeps prompts private |
+| dotenv | Loads API keys from .env files securely without hardcoding them |
 
 ---
 
