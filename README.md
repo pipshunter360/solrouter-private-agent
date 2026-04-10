@@ -14,7 +14,7 @@ A private AI agent that researches crypto markets and analyzes DeFi portfolio ri
 
 Every time you use a normal AI tool to research crypto, your prompt is sent in plain text to a company's server. 
 
-That means:
+  That means:
 - The AI company can read every question you ask
 - Your trading strategy, portfolio concerns, and research angles are logged
 - That data could be stored, analyzed, or exposed in a breach
@@ -22,7 +22,7 @@ That means:
 
 This is not a theoretical risk. It is how every mainstream AI tool works today.
 
-For a retail user asking general questions this might not matter. But for anyone doing serious crypto research — analyzing DeFi protocols before investing, researching tokens before buying, running AI agents with wallet access — this is a real and serious problem.
+If you're casually asking AI what Bitcoin is, sure, it doesn't matter. But the moment you start asking about a specific protocol you're considering, a token you're researching, or a strategy you're building, that's when it gets serious. That information reveals your next move. And right now it's sitting on someone else's server.
 
 ---
 
@@ -38,13 +38,13 @@ This is called end to end encrypted inference and SolRouter is one of the only p
 
 The privacy guarantee has four layers:
 
-Client side encryption → your prompt is encrypted before it leaves your device using X25519 key exchange. Nobody intercepts plaintext.
+Client side encryption: your prompt is encrypted before it leaves your device using X25519 key exchange. Nobody intercepts plaintext.
 
-Blind backend → SolRouter's servers route the encrypted payload but cannot read it. The backend is architecturally blind to your content.
+Blind backend: SolRouter's servers route the encrypted payload but cannot read it. The backend is architecturally blind to your content.
 
-TEE processing → decryption and inference happen inside a Trusted Execution Environment. This is specialized hardware that creates a sealed isolated environment. Even if someone had full access to the physical server they could not read what is being processed inside the TEE.
+TEE processing: decryption and inference happen inside a Trusted Execution Environment. This is specialized hardware that creates a sealed isolated environment. Even if someone had full access to the physical server they could not read what is being processed inside the TEE.
 
-On-chain attestations → the privacy guarantees are not just claims. They are verifiable on the Solana blockchain. Anyone can check that the system is operating as described.
+Onchain attestations: the privacy guarantees are not just claims. They are verifiable on the Solana blockchain. Anyone can check that the system is operating as described.
 
 ---
 
