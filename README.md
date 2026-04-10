@@ -12,8 +12,9 @@ A private AI agent that researches crypto markets and analyzes DeFi portfolio ri
 
 ## The Problem
 
-Every time you use a normal AI tool to research crypto, your prompt is sent in plain text to a company's server. That means:
+Every time you use a normal AI tool to research crypto, your prompt is sent in plain text to a company's server. 
 
+That means:
 - The AI company can read every question you ask
 - Your trading strategy, portfolio concerns, and research angles are logged
 - That data could be stored, analyzed, or exposed in a breach
