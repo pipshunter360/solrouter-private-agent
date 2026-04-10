@@ -6,7 +6,7 @@
 ![Network](https://img.shields.io/badge/network-Solana%20Devnet-9945FF.svg)
 ![Encryption](https://img.shields.io/badge/encryption-end--to--end-red.svg)
 
-A private AI agent that researches crypto markets and analyzes DeFi portfolio risk using end-to-end encrypted inference via SolRouter. Every query is encrypted on your device before it leaves — not even SolRouter's backend can read your prompts.
+A private AI agent that researches crypto markets and analyzes DeFi portfolio risk using end to end encrypted inference via SolRouter. Every query is encrypted on your device before it leaves, not even SolRouter's backend can read your prompts.
 
 ---
 
@@ -17,7 +17,7 @@ Every time you use a normal AI tool to research crypto, your prompt is sent in p
 - The AI company can read every question you ask
 - Your trading strategy, portfolio concerns, and research angles are logged
 - That data could be stored, analyzed, or exposed in a breach
-- In crypto markets, your research IS your edge — and it's being given away for free
+- In crypto markets, your research IS your edge and it's being given away for free
 
 This is not a theoretical risk. It is how every mainstream AI tool works today.
 
@@ -25,57 +25,57 @@ For a retail user asking general questions this might not matter. But for anyone
 
 ---
 
-## The Solution — Private Inference
+## The Solution: Private Inference
 
-SolRouter is a privacy-first AI inference platform built on Solana. It solves this problem with a completely different architecture:
+SolRouter is a privacy first AI inference platform built on Solana. It solves this problem with a completely different architecture:
 
-Your prompt never travels in plain text. Instead it is encrypted on your device before it leaves, using Arcium's RescueCipher with X25519 key exchange. The encrypted data is then routed through Solana's decentralized infrastructure to a Trusted Execution Environment — a piece of isolated hardware where even the server owner cannot see what is being processed inside.
+Your prompt never travels in plain text. Instead it is encrypted on your device before it leaves, using Arcium's RescueCipher with X25519 key exchange. The encrypted data is then routed through Solana's decentralized infrastructure to a Trusted Execution Environment a piece of isolated hardware where even the server owner cannot see what is being processed inside.
 
 The AI runs inside that sealed environment. The response comes back encrypted. You decrypt it on your device. At no point in that entire process does any server see your actual question.
 
-This is called end-to-end encrypted inference and SolRouter is one of the only platforms offering it on a live production network.
+This is called end to end encrypted inference and SolRouter is one of the only platforms offering it on a live production network.
 
 The privacy guarantee has four layers:
 
-Client-side encryption — your prompt is encrypted before it leaves your device using X25519 key exchange. Nobody intercepts plaintext.
+Client side encryption → your prompt is encrypted before it leaves your device using X25519 key exchange. Nobody intercepts plaintext.
 
-Blind backend — SolRouter's servers route the encrypted payload but cannot read it. The backend is architecturally blind to your content.
+Blind backend → SolRouter's servers route the encrypted payload but cannot read it. The backend is architecturally blind to your content.
 
-TEE processing — decryption and inference happen inside a Trusted Execution Environment. This is specialized hardware that creates a sealed isolated environment. Even if someone had full access to the physical server they could not read what is being processed inside the TEE.
+TEE processing → decryption and inference happen inside a Trusted Execution Environment. This is specialized hardware that creates a sealed isolated environment. Even if someone had full access to the physical server they could not read what is being processed inside the TEE.
 
-On-chain attestations — the privacy guarantees are not just claims. They are verifiable on the Solana blockchain. Anyone can check that the system is operating as described.
+On-chain attestations → the privacy guarantees are not just claims. They are verifiable on the Solana blockchain. Anyone can check that the system is operating as described.
 
 ---
 
 ## What This Agent Does
 
-This project demonstrates two powerful real-world use cases for private AI inference.
+This project demonstrates two powerful real world use cases for private AI inference.
 
-### Use Case 1 — Private Crypto Research
+### Use Case 1: Private Crypto Research
 
 The agent runs six encrypted research queries covering the topics that crypto traders and investors actually care about:
 
 What is SolRouter and why does private inference matter for crypto — understanding the technology you are using.
 
-What is DeFi and how safe is it for investments in 2026 — a foundational research question that reveals your investment thinking if sent unencrypted.
+What is DeFi and how safe is it for investments in 2026: a foundational research question that reveals your investment thinking if sent unencrypted.
 
-Top 3 risks of DeFi protocols in 2026 — exactly the kind of pre-investment research you do not want logged on someone else's server.
+Top 3 risks of DeFi protocols in 2026: exactly the kind of pre investment research you do not want logged on someone else's server.
 
-Current Bitcoin price and market sentiment — live market data pulled through encrypted inference using SolRouter's live web search feature.
+Current Bitcoin price and market sentiment: live market data pulled through encrypted inference using SolRouter's live web search feature.
 
-Best gaming coins to watch in 2026 — sector research that reveals your investment strategy.
+Best gaming coins to watch in 2026: sector research that reveals your investment strategy.
 
-Current crypto market situation in 2026 — macro market analysis using real-time data.
+Current crypto market situation in 2026: macro market analysis using real time data.
 
 Every single one of these queries is encrypted before it leaves your device. The responses confirm Encrypted: true on every call.
 
-### Use Case 2 — Portfolio Risk Analyzer
+### Use Case 2:  Portfolio Risk Analyzer
 
 The agent includes a portfolio risk analyzer that takes a list of DeFi positions and runs encrypted risk analysis on each one.
 
-In the demo the portfolio contains three positions — SOL staked on Marinade Finance, USDC on Raydium, and JUP on Jupiter. For each position the agent sends an encrypted query asking for risk analysis covering smart contract risks, liquidity risks, and market risks specific to that token and protocol.
+In the demo the portfolio contains three positions. SOL staked on Marinade Finance, USDC on Raydium, and JUP on Jupiter. For each position the agent sends an encrypted query asking for risk analysis covering smart contract risks, liquidity risks, and market risks specific to that token and protocol.
 
-In a real-world version a user would input their actual holdings. The critical point is that those holdings — what you own, how much, where it is deployed — never leave your device unencrypted. Nobody sees your portfolio. Not SolRouter, not the AI provider, nobody.
+In a real world version a user would input their actual holdings. The critical point is that those holdings what you own, how much, where it is deployed never leave your device unencrypted. Nobody sees your portfolio. Not SolRouter, not the AI provider, nobody.
 
 This is the use case that matters most for serious DeFi users. Your portfolio composition is sensitive financial information. It should be treated that way.
 
@@ -83,11 +83,11 @@ This is the use case that matters most for serious DeFi users. Your portfolio co
 
 ## Live Demo
 
-### Full Agent Demo — Encrypted Research and Portfolio Risk Analyzer
+### Full Agent Demo: Encrypted Research and Portfolio Risk Analyzer
 
 [![Agent Running Demo](https://img.shields.io/badge/▶%20Watch%20Full%20Demo-Agent%20Running-red?style=for-the-badge&logo=loom)](https://www.loom.com/share/171ee3f469c843f3b4c739d628e125d7)
 
-This demo shows the complete agent running — all six research queries plus the portfolio risk analyzer — with encryption confirmed on every single response.
+This demo shows the complete agent running all six research queries plus the portfolio risk analyzer with encryption confirmed on every single response.
 
 ---
 
@@ -97,7 +97,7 @@ This tutorial takes you from zero to a running encrypted agent. Follow each step
 
 ---
 
-### Step 1 — Create Your SolRouter Account
+### Step 1: Create Your SolRouter Account
 
 [![Create Account](https://img.shields.io/badge/▶%20Watch-Step%201%20Create%20Account-blue?style=for-the-badge&logo=loom)](https://www.loom.com/share/e5b9a65948d4462ab6ecf763ab2be96e)
 
@@ -107,7 +107,7 @@ Once you are in, go to solrouter.com/api to access the API dashboard where you w
 
 ---
 
-### Step 2 — Get Free Devnet USDC
+### Step 2: Get Free Devnet USDC
 
 [![Get Testnet USDC](https://img.shields.io/badge/▶%20Watch-Step%202%20Get%20Devnet%20USDC-green?style=for-the-badge&logo=loom)](https://www.loom.com/share/1093e5931ef744cc9fe22a908981df2f)
 
@@ -115,11 +115,11 @@ SolRouter uses USDC on Solana for payments. For testing on devnet you can get fr
 
 Go to faucet.circle.com, select Solana as the network, paste your Phantom wallet address, and request USDC. It arrives within seconds.
 
-You will also need a small amount of devnet SOL to pay Solana network fees. Every transaction on Solana requires SOL for gas — even when you are spending USDC. Get free devnet SOL from faucet.solana.com. One SOL is more than enough for extensive testing.
+You will also need a small amount of devnet SOL to pay Solana network fees. Every transaction on Solana requires SOL for gas even when you are spending USDC. Get free devnet SOL from faucet.solana.com. One SOL is more than enough for extensive testing.
 
 ---
 
-### Step 3 — Generate Your API Key
+### Step 3: Generate Your API Key
 
 [![Generate API Key](https://img.shields.io/badge/▶%20Watch-Step%203%20Generate%20API%20Key-orange?style=for-the-badge&logo=loom)](https://www.loom.com/share/23df9229099d4259b5c15e26e3d88b7e)
 
@@ -129,7 +129,7 @@ Store it in a .env file in your project and never commit it to GitHub. The .giti
 
 ---
 
-### Step 4 — Fund Your SolRouter Account
+### Step 4: Fund Your SolRouter Account
 
 [![Fund Account](https://img.shields.io/badge/▶%20Watch-Step%204%20Fund%20Account-yellow?style=for-the-badge&logo=loom)](https://www.loom.com/share/402b797095cc4d56861d0cbfdee48f30)
 
@@ -139,7 +139,7 @@ You need balance in your SolRouter account to make API calls. Each query costs a
 
 ---
 
-### Step 5 — Install Node.js
+### Step 5: Install Node.js
 
 [![Install Node.js](https://img.shields.io/badge/▶%20Watch-Step%205%20Install%20Node.js-lightgrey?style=for-the-badge&logo=loom)](https://www.loom.com/share/eb418922343d4e31893838bb650e401c)
 
@@ -151,7 +151,7 @@ Node.js is the JavaScript runtime that powers this agent. It allows you to run J
 
 ---
 
-### Step 6 — Initialize Project and Install SDK
+### Step 6: Initialize Project and Install SDK
 
 [![Install SDK](https://img.shields.io/badge/▶%20Watch-Step%206%20Install%20SDK-purple?style=for-the-badge&logo=loom)](https://www.loom.com/share/3df426afe8c744eb938cd1b7d2ece1a4)
 
@@ -165,7 +165,7 @@ npm init -y creates a package.json file that tracks your project dependencies. n
 
 ---
 
-### Step 7 — Configure Your API Key
+### Step 7: Configure Your API Key
 
 Create a file called .env in your project root and add this line:
 
@@ -177,7 +177,7 @@ Never share this key publicly and never commit it to GitHub. If your key is expo
 
 ---
 
-### Step 8 — Clone and Run
+### Step 8: Clone and Run
 
 git clone https://github.com/pipshunter360/solrouter-private-agent.git
 cd solrouter-private-agent
@@ -198,12 +198,12 @@ Network: Solana Devnet
 
 [SolRouter Overview]
 Query: What is SolRouter and why does private inference matter?
-Encrypting prompt client-side...
+Encrypting prompt client side...
 Response received!
 Encrypted: true
 
 Answer:
-SolRouter is a privacy-first AI inference platform built on Solana...
+SolRouter is a privacy first AI inference platform built on Solana...
 
 [DeFi Risk Analysis]
 Query: What are the top 3 risks of DeFi protocols in 2026?
@@ -216,13 +216,13 @@ Answer:
 2. Regulatory Uncertainty
 3. Platform and Counterparty Risk
 
-Portfolio Risk Analyzer — Private and Encrypted
+Portfolio Risk Analyzer Private and Encrypted
 Analyzing your DeFi positions privately...
 Your holdings are encrypted before leaving your device.
 
-[Risk Analysis — SOL on Marinade Finance]
+[Risk Analysis SOL on Marinade Finance]
 Query: Analyze the risk of holding 10 SOL in Marinade Finance...
-Encrypting prompt client-side...
+Encrypting prompt client side...
 Response received!
 Encrypted: true
 
@@ -250,7 +250,7 @@ Three groups benefit most from private inference:
 
 Active traders who do pre-trade research. Your research is your alpha. Keeping it private keeps your edge.
 
-DeFi investors analyzing protocols. Smart contract risk analysis, liquidity depth questions, protocol security research — all of this reveals what you are considering putting money into.
+DeFi investors analyzing protocols. Smart contract risk analysis, liquidity depth questions, protocol security research all of this reveals what you are considering putting money into.
 
 AI agent developers. Agents that manage DeFi positions or execute trades based on AI analysis should never send plaintext instructions to any server. Encrypted inference closes that attack surface completely.
 
@@ -259,7 +259,7 @@ AI agent developers. Agents that manage DeFi positions or execute trades based o
 ## Project Structure
 
 solrouter-private-agent/
-├── agent.mjs          # Main agent — crypto research and portfolio analyzer
+├── agent.mjs          # Main agent → crypto research and portfolio analyzer
 ├── package.json       # Project dependencies
 ├── .gitignore         # Protects .env and node_modules from being committed
 └── README.md          # This file
@@ -268,38 +268,38 @@ solrouter-private-agent/
 
 ## Available Models
 
-gpt-oss-20b — Open-source GPT 20B. Default model, cheapest option, good for general research queries.
+gpt-oss-20b → Open-source GPT 20B. Default model, cheapest option, good for general research queries.
 
-gemini-flash — Google Gemini Flash. Fast responses, good for high-volume queries.
+gemini-flash → Google Gemini Flash. Fast responses, good for high-volume queries.
 
-claude-sonnet — Anthropic Claude Sonnet. Strong reasoning, better for complex analysis.
+claude-sonnet → Anthropic Claude Sonnet. Strong reasoning, better for complex analysis.
 
-gpt-4o-mini — OpenAI GPT-4o Mini. Balanced performance and cost.
+gpt-4o-mini → OpenAI GPT-4o Mini. Balanced performance and cost.
 
 ---
 
 ## Tech Stack
 
-SolRouter SDK (@solrouter/sdk) — handles all encryption and API communication automatically.
+SolRouter SDK (@solrouter/sdk) → handles all encryption and API communication automatically.
 
-Node.js v24.14.1 — JavaScript runtime for running the agent outside a browser.
+Node.js v24.14.1 → JavaScript runtime for running the agent outside a browser.
 
-Solana Devnet — blockchain infrastructure for routing and payments.
+Solana Devnet → blockchain infrastructure for routing and payments.
 
-Circle USDC — stablecoin used for paying inference costs on devnet.
+Circle USDC → stablecoin used for paying inference costs on devnet.
 
-Arcium RescueCipher with X25519 — the encryption protocol that keeps prompts private.
+Arcium RescueCipher with X25519 → the encryption protocol that keeps prompts private.
 
-dotenv — loads API keys from .env files securely without hardcoding them.
+dotenv → loads API keys from .env files securely without hardcoding them.
 
 ---
 
 ## Built With
 
-SolRouter — solrouter.com
-Arcium — arcium.com
-Solana — solana.com
-Circle — circle.com
+SolRouter → solrouter.com
+Arcium → arcium.com
+Solana → solana.com
+Circle → circle.com
 
 ---
 
