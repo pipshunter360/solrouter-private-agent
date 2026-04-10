@@ -294,10 +294,12 @@ solrouter-private-agent/
 
 ## Built With
 
-SolRouter → solrouter.com
-Arcium → arcium.com
-Solana → solana.com
-Circle → circle.com
+| Platform | Link |
+|---|---|
+| SolRouter | [solrouter.com](https://solrouter.com) |
+| Arcium | [arcium.com](https://arcium.com) |
+| Solana | [solana.com](https://solana.com) |
+| Circle | [circle.com](https://circle.com) |
 
 ---
 
