@@ -50,35 +50,35 @@ Onchain attestations: the privacy guarantees are not just claims. They are verif
 
 ## What This Agent Does
 
-This project demonstrates two powerful real world use cases for private AI inference.
+This project covers two real use cases for private AI inference.
 
 ### Use Case 1: Private Crypto Research
 
-The agent runs six encrypted research queries covering the topics that crypto traders and investors actually care about:
+The agent runs six encrypted research queries covering topics that crypto traders and investors actually care about.
 
-What is SolRouter and why does private inference matter for crypto — understanding the technology you are using.
+* What is SolRouter and why does private inference matter for crypto. Understanding the technology before using it.
 
-What is DeFi and how safe is it for investments in 2026: a foundational research question that reveals your investment thinking if sent unencrypted.
+* What is DeFi and how safe is it for investments in 2026. A foundational question that reveals your investment thinking if sent unencrypted.
 
-Top 3 risks of DeFi protocols in 2026: exactly the kind of pre investment research you do not want logged on someone else's server.
+* Top 3 risks of DeFi protocols in 2026. The kind of pre-investment research you do not want logged on someone else's server.
 
-Current Bitcoin price and market sentiment: live market data pulled through encrypted inference using SolRouter's live web search feature.
+* Current Bitcoin price and market sentiment. Live market data pulled through encrypted inference using SolRouter's live web search.
 
-Best gaming coins to watch in 2026: sector research that reveals your investment strategy.
+* Best gaming coins to watch in 2026. Sector research that reveals your investment direction.
 
-Current crypto market situation in 2026: macro market analysis using real time data.
+* Current crypto market situation in 2026. Macro market analysis using real-time data.
 
-Every single one of these queries is encrypted before it leaves your device. The responses confirm Encrypted: true on every call.
+Every query is encrypted before it leaves your device. Every response confirms Encrypted: true.
 
-### Use Case 2:  Portfolio Risk Analyzer
+### Use Case 2: Portfolio Risk Analyzer
 
-The agent includes a portfolio risk analyzer that takes a list of DeFi positions and runs encrypted risk analysis on each one.
+The agent takes a list of DeFi positions and runs encrypted risk analysis on each one.
 
-In the demo the portfolio contains three positions. SOL staked on Marinade Finance, USDC on Raydium, and JUP on Jupiter. For each position the agent sends an encrypted query asking for risk analysis covering smart contract risks, liquidity risks, and market risks specific to that token and protocol.
+The demo portfolio has three positions. SOL staked on Marinade Finance, USDC on Raydium, and JUP on Jupiter. For each position the agent asks for risk analysis covering smart contract risks, liquidity risks, and market risks specific to that token and protocol.
 
-In a real world version a user would input their actual holdings. The critical point is that those holdings what you own, how much, where it is deployed never leave your device unencrypted. Nobody sees your portfolio. Not SolRouter, not the AI provider, nobody.
+In a real scenario a user would input their actual holdings. The important thing is that those holdings never leave their device unencrypted. Nobody sees what you own, how much, or where it is deployed. Not SolRouter, not the AI provider, nobody.
 
-This is the use case that matters most for serious DeFi users. Your portfolio composition is sensitive financial information. It should be treated that way.
+For serious DeFi users this is the use case that matters most. Your portfolio is sensitive financial information and it should stay that way.
 
 ---
 
